@@ -1,0 +1,495 @@
+.clear{
+   clear: both;
+}
+body{
+   color: #212529;
+   font-family: 'segoe ui light';
+}
+.bg-myNav{
+   transition: background-color 2s , padding 2s;
+   position: fixed !important;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 999999;
+}
+#Loading{
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background-color:#888;
+   position: fixed;
+   z-index: 9999999999999999999999999;
+   display:flex ;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+a{
+   text-decoration: none;
+}
+.section-header{
+   text-align: center;
+   margin-bottom:20px ;
+}
+ul{
+   list-style: none;
+}
+:root{
+   --maincolor: #6195ff ;
+   --graycolor: #999;
+   --bg-gray : #f9f9f9;
+   --whitecolor : #fff;
+}
+.section-header .section-title{
+   font-size: 35px;
+   text-transform: capitalize;
+   margin-bottom: 10px;
+}
+.header.home-content.logo{
+   height: 50px;
+}
+.section-header .line{
+   display: block;
+   height: 5px;
+   width: 70px;
+   margin: 0px auto 70px auto;
+   background-color: var(--maincolor);
+   margin: auto;
+}
+.pd-y{
+   padding: 120px 0;
+}
+.overlay{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, .7);
+}
+.hover-opacity{
+   transition: opacity 0.5s;
+}
+.hover-opacity:hover{
+   opacity: 0.8;
+}
+.ltr-effect,
+.tp-effect{
+   position: relative;
+}
+.ltr-effect::after,
+.tp-effect::after{
+   position: absolute;
+   content: "";
+   background-color: rgba(0, 0, 0, .5);
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: -1;
+}
+.ltr-effect::after{
+   width: 0;
+   transition: width 1s;
+}
+.tp-effect::after{
+   height: 0;
+   transition: height 1s;
+}
+.ltr-effect:hover::after{
+   width: 100%;
+}
+.tp-effect:hover::after{
+   height: 100%;
+}
+button{
+   font-family: inherit;
+}
+.container{
+   width: 80%;
+   margin: auto;
+}
+body{
+   font-family: 'Varela Round', sans-serif;
+}
+
+/* home section */
+.home{
+   height: 100vh;
+   background-image: url(../images/about/2.jpg);
+   background-size: cover;
+   position: relative;
+}
+.home-content{
+   position: absolute;
+   width: 65%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+   text-align: center;
+   
+}
+.home-line{
+   background-color:burlywood;
+   width: 50%;
+   height: 5px;
+   position:absolute;
+   top: 30%;
+   left: 27%;
+   border-radius: 10px;
+}
+.home .title{
+   color: var(--whitecolor);
+   font-size: 2rem;
+}
+.home .home-desc {
+   margin: 30px 0px;
+   color:var(--whitecolor);
+   letter-spacing: 2px;
+   line-height: 1;
+   font-size: 1.5rem;
+   padding-top: 20px;
+}
+.home .btn{
+   min-width: 300px;
+   padding: 15 0 ;
+   border-radius:5px ;
+   border: 0;
+   cursor: pointer;
+   font-size: 18px;
+}
+.home .btn-learn{
+   background-color:rgba( 0, 50, 100, 200);
+   color:var(--whitecolor);
+}
+/* about section */
+.section-about{
+   background-image: url(../images/about/3.jpg);
+   background-size: cover ;
+   width: 100%;
+   height: 100vh;
+   color: #fff;
+   position: relative;
+}
+.about{
+   background-color: rgba(0, 0, 0, .7);
+   width: 100%;
+   background-size: cover cover;
+   height: 100vh;
+   padding: 0px;
+   margin: 0px;
+}
+.about .about-head{
+   padding: 10px;
+}
+.about-line{
+   background-color: burlywood;
+   width: 155px;
+   height: 3px;
+}
+.about-content{
+   width: 100%;
+   padding: 10px 5px;
+   
+}
+.about-content .content1{
+   width: 90%;
+}
+.about-content .content2{
+   width: 80%;
+   position: absolute;
+   left: 20%;
+   top: 70%;
+}
+/* Our section */
+.section-mission{
+   background-color:darkslategray;
+   width: 100%;
+   height: 100vh;
+   color: #fff;
+   position: relative;
+}
+.our-mission{
+   width: 100%;
+   height: 100vh;
+}
+.mission-image{
+   width: 60%;
+   height: 100%;
+   display: flex;
+   float: left;
+}
+.mission-image img{
+   width: 100%;
+   height: 100%;
+}
+.content-head{
+   padding: 10px;
+}
+.mission-line{
+   width: 170px;
+   height: 5px;
+   background-color: burlywood;
+   z-index: index 999999999; ;
+}
+.mission-content{
+   background-color: #01573b;
+   padding: 20px;
+   height: 60%;
+   position: absolute;
+   width: 50%;
+   left: 50%;
+   top: 20%;
+}
+.mission-para{
+   padding: 20px;
+}
+/* services Section */
+.section-header{
+   background-size: cover;
+   padding: 15px;
+   background-image: url(../images/about/5.jpg);
+   background-color: rgba(0, 0, 0, .5);
+}
+.services-item{
+   margin: 5px;
+   border: 1px solid #e8e8e8;
+   display: flex;
+   text-align: start;
+}
+.services-item p{
+   color:beige;
+}
+.services-item h3 {
+   color: #01573b;
+}
+.content-conten{
+   background-color: rgba(0, 0, 0, .5);
+   padding: 0;
+   margin: -15px;
+   margin: -15px;
+}
+.iconee{
+   padding: 0 0px ;
+   color:#1c1d23;
+}
+.contant-p{
+   width: 100%;
+}
+.content-item{
+   width: 45%;
+   margin: 5px;
+}
+/* number section */
+.numbers{
+   position: relative;
+   height: 300px;
+   background-image: url(../images/background/background2.webp);
+   background-size: cover;
+   background-attachment: fixed;
+}
+.numbers-items{
+   overflow: hidden;
+   padding: 100px 0;
+}
+.number-item{
+   width: 25%;
+   float: left;
+   text-align: center;
+}
+.number-item .icon{
+   color:var(--maincolor);
+   margin-bottom: 15px;
+}
+.number-item-title{
+   font-weight: bold;
+   font-size: 30px;
+   color: var(--whitecolor);
+}
+.number-item-text{
+   color:var(--whitecolor);
+}
+/* pricing section */
+.manage{
+   margin: 10PX 0PX;
+   background-image: url(../images/background/background1.webp);
+   color: #fff;
+}
+.manage-imge{
+   width: 160%;
+   overflow:scroll;
+}
+.content-manage{
+   width: 100%;
+}
+.content-acount{
+   width: 100%;
+}
+.manage-content{
+   width: 70%;
+   padding: 30px 0px;
+   height: 100%;
+}
+.acount-content{
+   margin: 25px;
+   padding:0px 10px 0px 10px;
+   width: 100%;
+}
+.acount-content .icons{
+   display: flex;
+   float: left;
+}
+.manage-content h2{
+   font-size: 30px;
+}
+.management h5 {
+   font-size: 20px;
+}
+.management p{
+   font-size: 15px;
+}
+.our-contents{
+   margin: 5px;
+   padding: 5px;
+   border: 1px solid #e8e8e8;
+   display: flex;
+   text-align:start;
+}
+/* our plans */
+.section-plane{
+   background-image: url(../images/about/7.jpg);
+   background-size: cover ;
+}
+.our-plans{
+   background-color: rgba(0, 0, 0, .5);
+}
+.stand{
+   text-align: center;
+   padding: 8px;
+   font-size: 35px;
+   color:wheat;
+}
+.ourplans-continio{
+   margin-top: 60px;
+}
+.month{
+   text-align: center;
+   color:#fff;
+   font-size: large;
+}
+.plans-line{
+   margin-left: 30%;
+   width: 40%;
+   height: 1px;
+   padding: 0 0px;
+   margin: 5px 0 5px 30%;
+   background-color: burlywood;
+   border-radius: 50%;
+}
+.plan-header{
+   color: #fff;
+   margin: 15px;
+   padding: 20px 20px 0px 0px;
+}
+.plane-line{
+   width: 150px;
+   height: 3px;
+   background-color:burlywood ;
+   border-radius: 5px;
+}
+.plan-line{
+   width: 90%;
+   height: 1px;
+   padding: 0 0px;
+   margin: 5px 3px;
+   background-color: burlywood;
+   border-radius: 50%;
+}
+.full{
+   font-size: 14px;
+   color:#fff;
+   padding: 0px;
+   margin: 5px;
+}
+.overplans{
+   padding: 30px 0px;
+}
+/* the team */
+.section-team{
+   padding: 0px;
+   background-image: url(../images/about/11.jpg);
+   background-size: cover  ;
+   color: #fff;
+}
+.the-team{
+   background-color: rgba(0, 0, 0, .7);
+   padding: 30px;
+}
+.plan-linne{
+   width: 140px;
+   height: 4px;
+   background-color:burlywood ;
+   border-radius: 5px;
+   text-align: center;
+}
+.team-content{
+   width: 100%;
+   border-radius: 100%;
+   text-align: center;
+}
+.aidit-imge{
+   width: 100%;
+   padding: 20px;
+   border-radius: 100%;
+}
+.aidit-imge .bis {
+   width: 100%;
+   background-color: burlywood ;
+}
+.aidit-imge img{
+   width: 70%;
+   border-radius : 100%;
+   padding: 10px;
+}
+.audit-manager{
+   color: #fff;
+}
+/* contact us */
+.section-contact{
+   background-image: url(../images/about/12.jpg);
+   height: 70vh;
+   margin-top: 5PX;
+   background-size: cover ;
+   color: #fff;
+}
+.lead-content{
+   background-color: rgba(0, 0, 0, .2);
+   height:70vh ;
+}
+.lead-info{
+   width: 50%;
+   height: 50%;
+   background-color:#01573b;
+   position: relative;
+   left: 50%;
+   top: 50%;
+   display: flex;
+   float: left;
+   padding: 0px;
+   margin: 0px;
+}
+.info-contet{
+   display: flex;
+   float: left;
+}
+.iconsse{
+   color: burlywood;
+   padding: 0px 10px;
+}
+.info-contet .scouts{
+   font-size: 20px;
+}
